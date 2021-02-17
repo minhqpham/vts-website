@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam Tech Society</title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <style>
+        @font-face {
+            font-family: VTS;
+            src: url('brown.ttf')
+        }
+        @font-face {
+            font-family: VTS-light;
+            src: url('brown-light.ttf')
+        }
+        body {
+            background-color: #010042;
+        }
+        #navbar {
+            width: 100%;
+        }
+        #toplogo {
+            width: 12vw;
+            margin-top: 1.66vw;
+            margin-left: 14%;
+        }
+        #topnav-right {
+            width: 42%;
+            float: right;
+        }
+        .topnav-text {
+            float: left;
+            font-family: VTS;
+            font-weight: bold;
+            color: #FFFFFF;
+            font-size: 1.4vw;
+            margin-right: 7.7%;
+            margin-top: 2.1vw;
+
+        }
+        #navbutton {
+            background-color: #5401A1;
+            width: 11vw;
+            height: 3.3vw;
+            border: none;
+            color: #FFFFFF;
+            padding: 1vw 1.5vw;
+            font-family: VTS;
+            font-size: 1.4vw;
+            text-align: center;
+            margin-right: 14vw;
+            margin-top: 1.1vw;
+        }
+        #map {
+            position: absolute;
+            margin-left: 11.94%;
+            margin-right: 12.43%;
+            margin-top: 1.4%;
+            width: 76%;
+        }
+        #group {
+            position: absolute;
+            margin-top: 26%;
+            width: 100%;
+            filter: drop-shadow(0px 0px 10px rgba(66, 255, 223, 0.7));
+        }
+        
+        #bigtext {
+            position: absolute;
+            width: 53.75vw;
+            height: 5.3vw;
+            left: 23vw;
+            top: 12.7vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 5.5vw;
+            line-height: 5.3vw;
+
+            text-align: center;
+
+            color: #FFFFFF;
+
+            text-shadow: 0px 0px 20px rgba(66, 255, 223, 0.79);
+
+
+        }
+        #smalltext {
+            position: absolute;
+            width: 61vw;
+            height: 4vw;
+            left: 19.5vw;
+            top: 19.5vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.66vw;
+            line-height: 120%;
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+        #cta {
+            position: absolute;
+            width: 28vw;
+            height: 4.4vw;
+            left: 30vw;
+            top: 44vw;
+
+            background: linear-gradient(91.18deg, rgba(255, 255, 255, 0.2407) 26.55%, rgba(255, 255, 255, 0.029) 88.74%);
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            backdrop-filter: blur(20px);
+            
+            padding-left: 1.6vw;
+        }
+        #ctabutton {
+            position: absolute;
+            width: 10vw;
+            height: 4.4vw;
+            left: 59.1vw;
+            top: 44vw;
+
+            background: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+
+            font-family: VTS;
+            color: #5401A1;
+            font-size: 1.1vw;
+            text-align: center;
+            font-weight: bold;
+        }
+        ::placeholder {
+            position: absolute;
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.1vw;
+            display: flex;
+            align-items: center;
+
+            color: #FFFFFF;
+        }
+        input[type=text] {
+            font-family: VTS;
+            color: #FFFFFF;
+            font-size: 1.1vw;
+        }
+
+        #info {
+            position: absolute;
+            width: 100vw;
+            height: 28vw;
+            top: 71.2vw;
+
+            background: linear-gradient(91.18deg, rgba(255, 255, 255, 0.2407) 39.3%, rgba(255, 255, 255, 0) 81.76%), rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            
+        }
+        #infotxt1 {
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.3vw;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+
+            margin-left: 43.2vw;
+            margin-top: 5vw;
+        }
+        #infotxt2 {
+            width: 40vw;
+            height: 12.7vw;
+            margin-left: 43.2vw;
+            margin-top: 1.6vw;
+
+            font-family: VTS-light;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.67vw;
+
+            color: #FFFFFF;
+        }
+        #why {
+            position: absolute;
+            width: 38.6vw;
+            height: 28vw;
+            left: -3px;
+            top: 71.2vw;
+        }
+        .stat {
+            position: absolute;
+            width: 17vw;
+            height: 4.7vw;
+            top: 110vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 5vw;
+            line-height: 4.7vw;
+            text-align: center;
+
+            color: #42FFDF;
+
+            mix-blend-mode: normal;
+        }
+        .fact {
+            position: absolute;
+            width: 17vw;
+            height: 1.6vw;
+            top: 115.8vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.6vw;
+            line-height: 1.6vw;
+
+            text-align: center;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+        }
+        .value {
+            position: absolute;
+            left: 23.9vw;
+            top: 132.15vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.2vw;
+            line-height: 2.1vw;
+            text-align: center;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+        }
+        #valuetxt {
+            position: absolute;
+            width: 10.8vw;
+            height: 3.2vw;
+            left: 44.6vw;
+            top: 145.5vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3.3vw;
+            line-height: 3.3vw;
+
+            text-align: center;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+        }
+        #circle {
+            position: absolute;
+            width: 16.1vw;
+            height: 16.1vw;
+            left: 41.94vw;
+            top: 139vw;
+
+            
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <img src="fulllogo.png" id="toplogo">
+        <div id="topnav-right">
+            <a class="topnav-text">About</a>
+            <a class="topnav-text">Contact</a>
+            <button type="button" id="navbutton">Subscribe</button>
+        </div>
+    </div>
+
+    <img src="map.png" id="map">
+    <img src="group.png" id="group">
+
+    <div id="bigtext">
+        By techie, for techie
+    </div>
+
+    <div id="smalltext">
+        A community for Vietnamese tech enthusiasts to <br> share expertise, make meaningful connections, and support each other.
+    </div>
+
+    <form>
+        <input type="text" name="email" placeholder="Email" id="cta">
+        <button id="ctabutton">Join our list</button>
+    </form>
+
+    <div id="info">
+        <div id="infotxt1">
+            Why Vietnam Tech Society?
+        </div>
+        <div id="infotxt2">
+            Regardless of numerous tech talents worldwide, the Vietnamese tech community outside of Vietnam is still considered under-represented. This can partially be attributed to the lack of an organization for Vietnamese in tech abroad, where people get together for mutual support and professional growth. To address this concern, Vietnam Tech Society (VTS) was established.
+        </div>
+    </div>
+
+    <img src="why.gif" id="why">
+
+    <div class="stat" style="left:20vw">2%</div>
+    <div class="stat" style="left:41.5vw">45%</div>
+    <div class="stat" style="left:63vw">3x</div>
+    <div class="fact" style="left:20vw">Viet students in tech</div>
+    <div class="fact" style="left:41.5vw">actually get jobs</div>
+    <div class="fact" style="left:63vw">tech jobs in 2021</div>
+
+    <div class="value" style="left:23.9vw; top:132.15vw;">User-centricity</div>
+    <div class="value" style="left:62.4vw; top:132.15vw;">Resourcefulness</div>
+    <div class="value" style="left:26.2vw; top:162vw;">Accessibility</div>
+    <div class="value" style="left:69.5vw; top:158.4vw">Inclusitivity</div>
+
+    <div id="valuetxt">Value?</div>
+    <img src="circle.png" id="circle">
+
+</body>
+</html>

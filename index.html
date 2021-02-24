@@ -18,26 +18,27 @@
             background-color: #010042;
         }
         #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 7vw;
+            background: rgba(1, 0, 66, 0.44);
+            backdrop-filter: blur(50px);
+            z-index: 100;
         }
         #toplogo {
             width: 12vw;
             margin-top: 1.66vw;
-            margin-left: 14%;
-        }
-        #topnav-right {
-            width: 42%;
-            float: right;
+            margin-left: 14vw;
         }
         .topnav-text {
-            float: left;
+            position: absolute;
             font-family: VTS;
             font-weight: bold;
             color: #FFFFFF;
             font-size: 1.4vw;
-            margin-right: 7.7%;
-            margin-top: 2.1vw;
-
+            margin-top: 2.8vw;
         }
         #navbutton {
             background-color: #5401A1;
@@ -49,23 +50,23 @@
             font-family: VTS;
             font-size: 1.4vw;
             text-align: center;
-            margin-right: 14vw;
-            margin-top: 1.1vw;
+            
+            margin-left: 49.1vw;
+            transform: translateY(-40%);
         }
         #map {
             position: absolute;
             margin-left: 11.94%;
             margin-right: 12.43%;
-            margin-top: 1.4%;
-            width: 76%;
+            margin-top: 6.44%;
+            width: 76.25%;
         }
         #group {
             position: absolute;
-            margin-top: 26%;
+            margin-top: 31%;
             width: 100%;
             filter: drop-shadow(0px 0px 10px rgba(66, 255, 223, 0.7));
         }
-        
         #bigtext {
             position: absolute;
             width: 53.75vw;
@@ -84,8 +85,6 @@
             color: #FFFFFF;
 
             text-shadow: 0px 0px 20px rgba(66, 255, 223, 0.79);
-
-
         }
         #smalltext {
             position: absolute;
@@ -281,18 +280,20 @@
 <body>
     <div id="navbar">
         <img src="fulllogo.png" id="toplogo">
-        <div id="topnav-right">
-            <a class="topnav-text">About</a>
-            <a class="topnav-text">Contact</a>
-            <button type="button" id="navbutton">Subscribe</button>
-        </div>
+        
+        <a class="topnav-text" style="margin-left:24.6vw; text-decoration:none; color:#42FFDF;" href="index.html">Home</a>
+        <a class="topnav-text" style="margin-left:32.15vw; text-decoration:none;" href="about.html">About</a>
+        <a class="topnav-text" style="margin-left:40vw">Contact</a>
+        <button type="button" id="navbutton">Subscribe</button>
+        
     </div>
 
     <img src="map.png" id="map">
     <img src="group.png" id="group">
+   
 
     <div id="bigtext">
-        By techie, for techie
+        By techie, for techie.
     </div>
 
     <div id="smalltext">

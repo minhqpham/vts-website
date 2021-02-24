@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About VTS</title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <style>
+        @font-face {
+            font-family: VTS;
+            src: url('brown.ttf')
+        }
+        @font-face {
+            font-family: VTS-light;
+            src: url('brown-light.ttf')
+        }
+        body {
+            background-color: #010042;
+        }
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 7vw;
+            background: rgba(1, 0, 66, 0.44);
+            backdrop-filter: blur(50px);
+            z-index: 100;
+        }
+        #toplogo {
+            width: 12vw;
+            margin-top: 1.66vw;
+            margin-left: 14vw;
+        }
+        .topnav-text {
+            position: absolute;
+            font-family: VTS;
+            font-weight: bold;
+            color: #FFFFFF;
+            font-size: 1.4vw;
+            margin-top: 2.8vw;
+        }
+        #navbutton {
+            background-color: #5401A1;
+            width: 11vw;
+            height: 3.3vw;
+            border: none;
+            color: #FFFFFF;
+            padding: 1vw 1.5vw;
+            font-family: VTS;
+            font-size: 1.4vw;
+            text-align: center;
+            
+            margin-left: 49.1vw;
+            transform: translateY(-40%);
+        }
+        #bigtext {
+            position: absolute;
+            width: 33.5vw;
+            height: 5.28vw;
+            left: 13.89vw;
+            top: 12.57vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 5.56vw;
+            line-height: 5.28vw;
+
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+        }
+        .w {
+            position: absolute;
+            width: 28.6vw;
+            height: 2.64vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.78vw;
+            line-height: 2.64vw;
+
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+        }
+        .text {
+            position: absolute;
+            width: 28.6vw;
+            height: 14.72vw;
+
+            font-family: VTS-light;
+            font-style: normal;
+            font-size: 1.67vw;
+            line-height: 1.66vw;
+
+            color: #FFFFFF;
+
+        }
+        #star1 {
+            position: absolute;
+            width: 125px;
+            height: 120px;
+            left: 969px;
+            top: 816px;
+
+            backdrop-filter: blur(15px);
+
+            border-radius: 5px;
+        }
+        #badge {
+            position: absolute;
+            width: 256.89px;
+            height: 256.89px;
+            left: 860.81px;
+            top: 676px;
+
+            transform: rotate(9.37deg);
+        }
+        #turquoise {
+            position: absolute;
+            width: 256.89px;
+            height: 256.89px;
+            left: 860.81px;
+            top: 676px;
+
+            mix-blend-mode: color;
+            transform: rotate(9.37deg);
+        }
+        #gold {
+            position: absolute;
+            width: 256.89px;
+            height: 256.89px;
+            left: 860.81px;
+            top: 676px;
+
+            mix-blend-mode: color;
+            transform: rotate(9.37deg);
+        }
+        #gloss {
+            position: absolute;
+            width: 256.89px;
+            height: 256.89px;
+            left: 860.81px;
+            top: 676px;
+
+            mix-blend-mode: screen;
+            opacity: 0.85;
+            transform: rotate(9.37deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <img src="fulllogo.png" id="toplogo">
+        
+        <a class="topnav-text" style="margin-left:24.6vw; text-decoration:none;" href="index.html">Home</a>
+        <a class="topnav-text" style="margin-left:32.15vw; text-decoration:none; color:#42FFDF;" href="about.html">About</a>
+        <a class="topnav-text" style="margin-left:40vw">Contact</a>
+        <button type="button" id="navbutton">Subscribe</button>
+        
+    </div>
+
+    <div id="bigtext">About us</div>
+
+    <div class="w" style="left:18.6vw;top:22.3vw">Who we are</div>
+    <div class="w" style="left:52.78vw;top:22.3vw">Who we serve</div>
+    <div class="w" style="left:18.6vw;top:41.46vw">Our mission</div>
+
+    <div class="text" style="left:18.6vw;top:26.6vw">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+    <div class="text" style="left:52.78vw;top:26.6vw">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+    <div class="text" style="left:18.6vw;top:45.76vw">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+
+    <img src="star1.png" id="star1">
+    <img src="badge.png" id="badge">
+    <img src="color A.png" id="gold">
+    <img src="color B.png" id="turquoise">
+    <img src="glossy.png" id="gloss">
+</body>
+</html>

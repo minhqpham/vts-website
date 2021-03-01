@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam Tech Society</title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <style>
+        @font-face {
+            font-family: VTS;
+            src: url('brown.ttf')
+        }
+        @font-face {
+            font-family: VTS-light;
+            src: url('brown-light.ttf')
+        }
+        body {
+            background-color: #010042;
+        }
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 7vw;
+            background: rgba(1, 0, 66, 0.44);
+            backdrop-filter: blur(50px);
+            z-index: 1;
+        }
+        #toplogo {
+            width: 11.6vw;
+            margin-top: 1.66vw;
+            margin-left: 14.44vw;
+        }
+        .topnav-text {
+            position: absolute;
+            font-family: VTS;
+            font-weight: bold;
+            color: #FFFFFF;
+            font-size: 1.4vw;
+            margin-top: 2.8vw;
+        }
+        .topnav-text:hover {
+            color: #42FFDF;
+        }
+        #navbutton {
+            background-color: #5401A1;
+            width: 11vw;
+            height: 3.3vw;
+            border: none;
+            color: #FFFFFF;
+            padding: 1vw 1.5vw;
+            font-family: VTS;
+            font-size: 1.4vw;
+            text-align: center;
+            
+            margin-left: 49.1vw;
+            transform: translateY(-50%);
+        }
+        #bigtext {
+            position: absolute;
+            width: 510px;
+            height: 152px;
+            left: 200px;
+            top: 181px;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 80px;
+            line-height: 76px;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+        }
+        #first {
+            position: absolute;
+            width: 245px;
+            height: 64px;
+            left: 730px;
+            top: 181px;
+
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            background: #010042;
+            padding-left: 24px;
+        }
+        #last {
+            position: absolute;
+            width: 245px;
+            height: 64px;
+            left: 995px;
+            top: 182px;
+
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            background: #010042;
+            padding-left: 24px;
+        }
+        #email {
+            position: absolute;
+            width: 510px;
+            height: 64px;
+            left: 730px;
+            top: 265px;
+
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            background: #010042;
+            padding-left: 24px;
+        }
+        #msg {
+            position: absolute;
+            width: 510px;
+            height: 256px;
+            left: 730px;
+            top: 349px;
+
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            background: #010042;
+            padding: 24px;
+            overflow-y: scroll;
+        }
+        ::placeholder {
+            position: absolute;
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.1vw;
+            display: flex;
+            align-items: center;
+
+            color: #FFFFFF;
+        }
+        input[type=text] + textarea {
+            font-family: VTS;
+            color: #FFFFFF;
+            font-size: 1.1vw;
+        }
+        #send {
+            position: absolute;
+            background-color: #5401A1;
+            width: 157px;
+            height: 48px;
+            left: 1083px;
+            top: 625px;
+            border: none;
+            color: #FFFFFF;
+            padding: 16px 36px;
+            font-family: VTS;
+            font-size: 16px;
+            text-align: center;
+        }
+        #footer {
+            position: absolute;
+            width: 100vw;
+            height: 17.08vw;
+            left: 0;
+            top: 818px;
+
+            background: #010042;
+            box-shadow: 0px -2.78vw 5.56vw rgba(84, 1, 161, 0.37);
+        }
+        #bttmlogo {
+            margin-left: 18.61vw;
+            margin-top: 5.14vw;
+
+            width: 23.125vw;
+        }
+        #fb {
+            position: absolute;
+            left: 59.17%;
+            top: 42.28%;
+
+            width: 1.75vw;
+        }
+        #li {
+            position: absolute;
+            left: 67.29%;
+            top: 42.68%;
+
+            width: 3vw;
+        }
+        #mail {
+            position: absolute;
+            left: 76.6%;
+            top: 45.9%;
+
+            width: 3vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <img src="fulllogo.png" id="toplogo">
+        
+        <a class="topnav-text" style="margin-left:24.5vw; text-decoration:none;" href="index.html">Home</a>
+        <a class="topnav-text" style="margin-left:32.15vw; text-decoration:none;" href="about.html">About</a>
+        <a class="topnav-text" style="margin-left:40vw; text-decoration:none; color:#42FFDF;" href="contact.html">Contact</a>
+        <button type="button" id="navbutton">Subscribe</button>
+    </div>
+
+    <div id="bigtext">Don't be shy, say Hi!</div>
+    <form id="userform">
+        <input type="text" name="firstname" placeholder="First Name" id="first">
+        <input type="text" name="lastname" placeholder="Last Name" id="last">
+        <input type="text" name="email" placeholder="Email" id="email">
+        <textarea form="userform" name="message" id="msg" placeholder="Hi VTS, I would like to..."></textarea>
+        <button id="send">Send</button>
+    </form>
+
+    <div id="footer">
+        <img src="fulllogobig.png" id="bttmlogo">
+
+        <a href="https://www.facebook.com/VietnamTechSociety">
+            <img src="fb.png" id="fb">
+        </a>
+
+        <a href="https://www.linkedin.com/company/vietnam-tech-society/"> 
+            <img src="li.png" id="li">
+        </a>
+
+        <a>
+            <img src="mail.png" id="mail">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

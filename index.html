@@ -25,12 +25,12 @@
             height: 7vw;
             background: rgba(1, 0, 66, 0.44);
             backdrop-filter: blur(50px);
-            z-index: 100;
+            z-index: 1;
         }
         #toplogo {
-            width: 12vw;
+            width: 11.6vw;
             margin-top: 1.66vw;
-            margin-left: 14vw;
+            margin-left: 14.44vw;
         }
         .topnav-text {
             position: absolute;
@@ -39,6 +39,9 @@
             color: #FFFFFF;
             font-size: 1.4vw;
             margin-top: 2.8vw;
+        }
+        .topnav-text:hover {
+            color: #42FFDF;
         }
         #navbutton {
             background-color: #5401A1;
@@ -52,7 +55,10 @@
             text-align: center;
             
             margin-left: 49.1vw;
-            transform: translateY(-40%);
+            transform: translateY(-50%);
+        }
+        #navbutton:hover {
+            cursor: pointer;
         }
         #map {
             position: absolute;
@@ -63,15 +69,24 @@
         }
         #group {
             position: absolute;
-            margin-top: 31vw;
+            margin-top: 32vw;
             width: 100vw;
             filter: drop-shadow(0px 0px 10px rgba(66, 255, 223, 0.7));
+            left: 0;
+            right: 0;
+        }
+        #gradient {
+            position: absolute;
+            top: 15.42vw;
+            width: 100vw;
+            left: 0;
+            right: 0;
         }
         #bigtext {
             position: absolute;
-            width: 48.33vw;
+            width: 52.92vw;
             height: 4.72vw;
-            left: 25.76vw;
+            left: 23.47vw;
             top: 12.57vw;
 
             font-family: VTS;
@@ -107,7 +122,7 @@
             position: absolute;
             width: 28vw;
             height: 4.4vw;
-            left: 30vw;
+            left: 30.2vw;
             top: 44vw;
 
             background: linear-gradient(91.18deg, rgba(255, 255, 255, 0.2407) 26.55%, rgba(255, 255, 255, 0.029) 88.74%);
@@ -150,56 +165,75 @@
             color: #FFFFFF;
             font-size: 1.1vw;
         }
-
-        #info {
+        #why {
             position: absolute;
             width: 100vw;
-            height: 28vw;
-            top: 71.2vw;
-
-            background: linear-gradient(91.18deg, rgba(255, 255, 255, 0.2407) 39.3%, rgba(255, 255, 255, 0) 81.76%), rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(20px);
-            
+            left: 0;
+            top: 71.18vw;
         }
-        #infotxt1 {
+        .whyhead {
+            position: absolute;
+            height: 2.64vw;
+
             font-family: VTS;
             font-style: normal;
             font-weight: normal;
             font-size: 2.78vw;
+            line-height: 2.64vw;
+
+            text-align: center;
 
             color: #FFFFFF;
 
             mix-blend-mode: normal;
-
-            margin-left: 43.19vw;
-            margin-top: 5vw;
         }
-        #infotxt2 {
+        .whyinfo {
+            position: absolute;
             width: 43.47vw;
-            height: 11.18vw;
-            margin-left: 43.19vw;
-            margin-top: 1.67vw;
+            height: 5.42vw;
+            left: 28.33vw;
 
             font-family: VTS-light;
             font-style: normal;
-            font-weight: normal;
             font-size: 1.67vw;
-            line-height: 1.6vw;
+            font-weight: lighter;
+            line-height: 110%;
+
+            text-align: center;
 
             color: #FFFFFF;
         }
-        #why {
+        #learn {
             position: absolute;
-            width: 38.6vw;
-            height: 28vw;
-            left: -3px;
-            top: 71.2vw;
+            width: 6.875vw;
+            height: 1.25vw;
+            left: 45.56vw;
+            top: 108.96vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.25vw;
+            line-height: 1.25vw;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #14FFD8;
+        }
+        #arrow {
+            position: absolute;
+            width: 1.67vw;
+            height: 0.97vw;
+            left: 52.99vw;
+            top: 109.03vw;
         }
         .stat {
             position: absolute;
             width: 17vw;
             height: 4.7vw;
-            top: 110vw;
+            top: 140.625vw;
 
             font-family: VTS;
             font-style: normal;
@@ -216,7 +250,7 @@
             position: absolute;
             width: 17vw;
             height: 1.6vw;
-            top: 115.8vw;
+            top: 146.46vw;
 
             font-family: VTS;
             font-style: normal;
@@ -235,7 +269,7 @@
             width: 22.15vw;
             height: 2.64vw;
             left: 38.89vw;
-            top: 128.06vw;
+            top: 161.94vw;
 
             font-family: VTS;
             font-style: normal;
@@ -253,7 +287,7 @@
             position: absolute;
             width: 17.01vw;
             height: 1.67vw;
-            top: 147.78vw;
+            top: 181.46vw;
 
             font-family: VTS;
             font-style: normal;
@@ -269,7 +303,7 @@
         .valuetxt {
             position: absolute;
             width: 17.01vw;
-            top: 151.1vw;
+            top: 184.79vw;
 
             font-family: VTS-light;
             font-style: normal;
@@ -283,12 +317,93 @@
 
             mix-blend-mode: normal;
         }
+        #user {
+            position: absolute;
+            width: 7.78vw;
+            height: 9.625vw;
+            left: 18.54vw;
+            top: 169.03vw;
+        }
+        #res {
+            position: absolute;
+            width: 8.26vw;
+            height: 7.71vw;
+            left: 36.67vw;
+            top: 170vw;
+        }
+        #acc {
+            position: absolute;
+            width: 8.23vw;
+            height: 9.65vw;
+            left: 55.21vw;
+            top: 169.03vw;
+        }
+        #incl {
+            position: absolute;
+            width: 8.4vw;
+            height: 8.4vw;
+            left: 73.47vw;
+            top: 169.65vw;
+        }
+        #finalcta {
+            position: absolute;
+            width: 61.875vw;
+            height: 13.54vw;
+            left: 19.03vw;
+            top: 205.35vw;
+
+            background: #14FFD8;
+        }
+        #finalctabigtxt {
+            width: 33.06vw;
+            height: 3.19vw;
+            margin-left: 4.44vw;
+            margin-top: 4.44vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: lighter;
+            font-size: 3.33vw;
+            line-height: 3.19vw;
+
+            color: #010042;
+
+            mix-blend-mode: normal;
+        }
+        #finalctasmalltxt {
+            width: 29.1vw;
+            height: 1.6vw;
+            margin-left: 4.44vw;
+            margin-top: 0.56vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.67vw;
+            line-height: 1.6vw;
+
+            color: #010042;
+        }
+        #finalctabutton {
+            background-color: #5401A1;
+            width: 16.875vw;
+            height: 4.44vw;
+            border: none;
+            color: #FFFFFF;
+            padding: 1.39vw 2.85vw;
+            font-family: VTS;
+            font-size: 1.67vw;
+            text-align: center;
+            
+            margin-left: 41.25vw;
+            transform: translateY(-115%);
+        }
         #footer {
             position: absolute;
             width: 100vw;
             height: 17.08vw;
             left: 0;
-            top: 173.47vw;
+            top: 224.86vw;
 
             background: #010042;
             box-shadow: 0px -2.78vw 5.56vw rgba(84, 1, 161, 0.37);
@@ -302,77 +417,54 @@
         #fb {
             position: absolute;
             left: 59.17%;
-            right: 39.38%;
             top: 42.28%;
-            bottom: 42.06%;
 
             width: 1.75vw;
         }
-        #li1 {
+        #li {
             position: absolute;
             left: 67.29%;
-            right: 32.18%;
             top: 42.68%;
-            bottom: 54.21%;
-        }
-        #li2 {
-            position: absolute;
-            left: 67.29%;
-            right: 32.18%;
-            top: 48.11%;
-            bottom: 42.58%;
-        }
-        #li3 {
-            position: absolute;
-            left: 68.35%;
-            right: 30.06%;
-            top: 47.34%;
-            bottom: 42.58%;
-        }
-        #mail1 {
-            position: absolute;
-            left: 76.6%;
-            right: 20.75%;
-            top: 45.45%;
-            bottom: 49.12%;
-        }
-        #mail2 {
-            position: absolute;
-            left: 76.6%;
-            right: 20.75%;
-            top: 43.9%;
-            bottom: 43.69%;
-        }
-        #u1 {
-            position: absolute;
-            width: 3.9vw;
-            left: 20.35vw;
-            top: 137.52vw;
 
+            width: 3vw;
         }
-        #u2 {
+        #mail {
             position: absolute;
-            width: 6.65vw;
-            left: 19.03vw;
-            top: 140.73vw;
+            left: 76.6%;
+            top: 45.9%;
+
+            width: 3vw;
         }
-        #u3 {
-            position: absolute;
-            width: 7.78vw;
-            left: 18.47vw;
-            top: 135.625vw;
+        #subscribe {
+            display: none; 
+            position: fixed; 
+            z-index: 2;
+            padding-top: 18vh;
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
         }
-        #r1 {
-            position: absolute;
-            width: 8.06vw;
-            left: 36.74vw;
-            top: 137.01vw;
+        #boxcontent {
+            background: #FFFFFF;
+            margin: auto;
+            width: 640px;
+            height: 480px;
         }
-        #a1 {
+        #closebox {
             position: absolute;
-            left: 55.56vw;
-            right: 37.04vw;
-            top: 136.11vw;
+            color: #5401A1;
+            font-family: VTS-light;
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 24px;
+            margin-left: 598px;
+        }
+        #closebox:hover {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -380,19 +472,25 @@
     <div id="navbar">
         <img src="fulllogo.png" id="toplogo">
         
-        <a class="topnav-text" style="margin-left:24.6vw; text-decoration:none; color:#42FFDF;" href="index.html">Home</a>
+        <a class="topnav-text" style="margin-left:24.5vw; text-decoration:none; color:#42FFDF;" href="index.html">Home</a>
         <a class="topnav-text" style="margin-left:32.15vw; text-decoration:none;" href="about.html">About</a>
-        <a class="topnav-text" style="margin-left:40vw">Contact</a>
+        <a class="topnav-text" style="margin-left:40vw; text-decoration:none;" href="contact.html">Contact</a>
         <button type="button" id="navbutton">Subscribe</button>
-        
+    </div>
+
+    <div id="subscribe">
+        <div id="boxcontent">
+            <span id="closebox">&times;</span>
+        </div>
     </div>
 
     <img src="map.png" id="map">
     <img src="group.png" id="group">
+    <img src="gradient.png" id="gradient">
    
 
     <div id="bigtext">
-        By techie, for techie.
+        By techies, for techies.
     </div>
 
     <div id="smalltext">
@@ -404,16 +502,16 @@
         <button id="ctabutton">Join our list</button>
     </form>
 
-    <div id="info">
-        <div id="infotxt1">
-            Why Vietnam Tech Society?
-        </div>
-        <div id="infotxt2">
-            Regardless of numerous tech talents worldwide, the Vietnamese tech community outside of Vietnam is still considered under-represented. This can partially be attributed to the lack of an organization for Vietnamese in tech abroad, where people get together for mutual support and professional growth. To address this concern, Vietnam Tech Society (VTS) was established.
-        </div>
-    </div>
+    <img src="why.png" id="why">
+    <div class="whyhead" style="width:16.74vw; left:41.74vw; top:79.51vw">Who we are</div>
+    <div class="whyinfo" style="top:83.82vw">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+    <div class="whyhead" style="width:35.69vw; left:32.22vw; top:94.24vw">Why Vietnam Tech Society</div>
+    <div class="whyinfo" style="top:98.54vw">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+    <a href="about.html">
+        <div id="learn">Learn more</div>
+        <img src="arrow.png" id="arrow">
+    </a>
 
-    <img src="why.gif" id="why">
 
     <div class="stat" style="left:20vw">2%</div>
     <div class="stat" style="left:41.5vw">45%</div>
@@ -429,36 +527,41 @@
     <div class="value" style="left:50.69vw">Accessibility</div>
     <div class="value" style="left:69.1vw">Inclusitivity</div>
 
-    <img src="u3.png" id="u3">
-    <img src="u2.png" id="u2">
-    <img src="u1.png" id="u1">
-
-    <img src="r1.png" id="r1">
+    <img src="user.png" id="user">
+    <img src="res.png" id="res">
+    <img src="acc.png" id="acc">
+    <img src="incl.png" id="incl">
     
-    <img src="a1.png" id="a1">
 
     <div class="valuetxt" style="height:5.9vw; left:13.89vw">Understanding clientele’s demand, VTS offers users highly beneficial products developed by an experienced founding team.</div>
     <div class="valuetxt" style="height:7.1vw; left:32.39vw">At VTS, mentees would be equipped with essential insights, skills, experience, connections, and opportunities to thrive in different environments.</div>
     <div class="valuetxt" style="height:2.36vw; left:50.69vw">VTS promises mentees good company and affordability.</div>
     <div class="valuetxt" style="height:5.9vw; left:69.1vw">At VTS, we build a support network where every member is equally valued and their career development is fostered.</div>
 
+    <div id="finalcta">
+        <div id="finalctabigtxt">Be the first to know.</div>
+        <div id="finalctasmalltxt">Get exclusive updates on our work.</div>
+
+        <button type="button" id="finalctabutton">Sign up today</button>
+    </div>
+
     <div id="footer">
-        <img src="fulllogo.png" id="bttmlogo">
+        <img src="fulllogobig.png" id="bttmlogo">
 
         <a href="https://www.facebook.com/VietnamTechSociety">
             <img src="fb.png" id="fb">
+        </a>
 
         <a href="https://www.linkedin.com/company/vietnam-tech-society/"> 
-            <img src="li1.png" id="li1">
-            <img src="li2.png" id="li2">
-            <img src="li3.png" id="li3">
-        </a>
-        <a>
-            <img src="mail1.png" id="mail1">
-            <img src="mail2.png" id="mail2">
+            <img src="li.png" id="li">
         </a>
 
+        <a>
+            <img src="mail.png" id="mail">
+        </a>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

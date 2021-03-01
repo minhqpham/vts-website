@@ -24,7 +24,7 @@
             width: 100vw;
             height: 7vw;
             background: rgba(1, 0, 66, 0.44);
-            backdrop-filter: blur(50px);
+            backdrop-filter: blur(3.47vw);
             z-index: 1;
         }
         #toplogo {
@@ -71,7 +71,7 @@
             position: absolute;
             margin-top: 32vw;
             width: 100vw;
-            filter: drop-shadow(0px 0px 10px rgba(66, 255, 223, 0.7));
+            filter: drop-shadow(0 0 0.69vw rgba(66, 255, 223, 0.7));
             left: 0;
             right: 0;
         }
@@ -99,7 +99,7 @@
 
             color: #FFFFFF;
 
-            text-shadow: 0px 0px 1.39vw rgba(66, 255, 223, 0.79);
+            text-shadow: 0 0 1.39vw rgba(66, 255, 223, 0.79);
         }
         #smalltext {
             position: absolute;
@@ -128,7 +128,7 @@
             background: linear-gradient(91.18deg, rgba(255, 255, 255, 0.2407) 26.55%, rgba(255, 255, 255, 0.029) 88.74%);
             border: 0.139vw solid #FFFFFF;
             box-sizing: border-box;
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(1.39vw);
             
             padding-left: 1.6vw;
         }
@@ -140,7 +140,7 @@
             top: 44vw;
 
             background: #FFFFFF;
-            border: 2px solid #FFFFFF;
+            border: 0.14vw solid #FFFFFF;
             box-sizing: border-box;
 
             font-family: VTS;
@@ -149,7 +149,10 @@
             text-align: center;
             font-weight: bold;
         }
-        ::placeholder {
+        #ctabutton:hover {
+            cursor: pointer;
+        }
+        #cta::placeholder {
             position: absolute;
             font-family: VTS;
             font-style: normal;
@@ -398,6 +401,9 @@
             margin-left: 41.25vw;
             transform: translateY(-115%);
         }
+        #finalctabutton:hover {
+            cursor: pointer;
+        }
         #footer {
             position: absolute;
             width: 100vw;
@@ -448,20 +454,82 @@
             background-color: rgb(0,0,0); 
             background-color: rgba(0,0,0,0.4); 
         }
+        #sub {
+            width: 8.03vw;
+            height: 8.47vw;
+            margin-left: 18.19vw;
+            margin-top: 3.33vw;
+        }
+        #subjoin {
+            width: 31.18vw;
+            height: 5.28vw;
+            margin-left: 6.6vw;
+            margin-top: 2.78vw;
+
+            font-family: VTS;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.78vw;
+            line-height: 2.64vw;
+            text-align: center;
+
+            color: #5401A1;
+
+            mix-blend-mode: normal;
+        }
+        #subcta {
+            width: 28vw;
+            height: 4.4vw;
+            margin-left: 2.57vw;
+            margin-top: 3.89vw;
+
+            background: #FFFFFF;
+            border: 0.139vw solid #5401A1;
+            box-sizing: border-box;
+            
+            padding-left: 1.6vw;
+        }
+        #subcta::placeholder {
+            color: #5401A1;
+        }
+        input[type=email] {
+            font-family: VTS;
+            font-size: 1.1vw;
+            color: #5401A1;
+        }
+        #subctabutton {
+            width: 10vw;
+            height: 4.4vw;
+            margin-left: 1.11vw;
+            margin-top: 3.89vw;
+
+            background: #5401A1;
+            border: 0.14vw solid #5401A1;
+            box-sizing: border-box;
+
+            font-family: VTS;
+            color: #FFFFFF;
+            font-size: 1.1vw;
+            text-align: center;
+            font-weight: bold;
+        }
+        #subctabutton:hover {
+            cursor: pointer;
+        }
         #boxcontent {
             background: #FFFFFF;
             margin: auto;
-            width: 640px;
-            height: 480px;
+            width: 44.44vw;
+            height: 33.33vw;
         }
         #closebox {
             position: absolute;
             color: #5401A1;
             font-family: VTS-light;
-            font-size: 28px;
+            font-size: 1.94vw;
             font-weight: bold;
-            margin-top: 24px;
-            margin-left: 598px;
+            margin-top: 1.67vw;
+            margin-left: 41.53vw;
         }
         #closebox:hover {
             cursor: pointer;
@@ -481,6 +549,12 @@
     <div id="subscribe">
         <div id="boxcontent">
             <span id="closebox">&times;</span>
+            <img src="sub.png" id="sub">
+            <div id="subjoin">Join our email list to <br> get the latest updates.</div>
+            <form>
+                <input type="email" name="email" placeholder="Email" id="subcta">
+                <button id="subctabutton">Join our list</button>
+            </form>
         </div>
     </div>
 

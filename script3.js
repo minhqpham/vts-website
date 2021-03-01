@@ -1,14 +1,10 @@
 var modal = document.getElementById("subscribe");
 
 var btn = document.getElementById("navbutton");
-var btn_b = document.getElementById("finalctabutton");
 
 var span = document.getElementById("closebox");
 
 btn.onclick = function() {
-  modal.style.display = "block";
-}
-btn_b.onclick = function() {
   modal.style.display = "block";
 }
 span.onclick = function() {
@@ -19,4 +15,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
